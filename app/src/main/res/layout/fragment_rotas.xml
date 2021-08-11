@@ -46,17 +46,17 @@
             android:id="@+id/rota_mapa"
             android:layout_width="300dp"
             android:layout_height="300dp"
-            android:layout_marginStart="30dp"
-            android:layout_marginLeft="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="30dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginRight="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/todo"
             android:src="@drawable/ic_launcher_background"
             app:layout_constraintBottom_toTopOf="@+id/rota_card_view"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/rota_botao_iniciar"
-            android:contentDescription="@string/todo" />
+            app:layout_constraintTop_toBottomOf="@+id/rota_botao_iniciar" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/rota_card_view"

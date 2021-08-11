@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         /*getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setLogo(R.drawable.logo_empresa);
+        getSupportActionBar().setLogo(R.drawable.logo_cv);
         getSupportActionBar().setDisplayUseLogoEnabled(true);*/
 
         tabLayout = findViewById(R.id.main_tab_layout);
