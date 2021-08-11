@@ -23,9 +23,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         getSupportActionBar().setDisplayShowTitleEnabled(false);
-        /*getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setLogo(R.drawable.logo_cv);
-        getSupportActionBar().setDisplayUseLogoEnabled(true);*/
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.drawable.logo_cortesvillela);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
 
         tabLayout = findViewById(R.id.main_tab_layout);
         viewPager = findViewById(R.id.main_view_pager);
