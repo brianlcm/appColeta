@@ -54,7 +54,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="0dp"
                     android:layout_marginStart="30dp"
-                    android:layout_marginLeft="30dp"
                     android:layout_marginTop="10dp"
                     android:text="@string/data"
                     android:textSize="16sp" />
@@ -69,9 +68,7 @@
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_marginStart="110dp"
-                    android:layout_marginLeft="110dp"
                     android:layout_marginEnd="30dp"
-                    android:layout_marginRight="30dp"
                     android:textSize="16sp"
                     tools:text="11/08/2021" />
 
@@ -95,7 +92,6 @@
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_marginEnd="30dp"
-                    android:layout_marginRight="30dp"
                     android:textSize="16sp"
                     tools:text="Francisco Bernardino" />
 
@@ -116,8 +112,7 @@
                     app:layout_constraintTop_toTopOf="@id/detalhes_rota_exames"
                     android:layout_width="0dp"
                     android:layout_height="30dp"
-                    android:layout_marginEnd="30dp"
-                    android:layout_marginRight="30dp" />
+                    android:layout_marginEnd="30dp" />
 
                 <TextView
                     android:id="@+id/detalhes_rota_enfermeiros"
@@ -139,7 +134,6 @@
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_marginEnd="30dp"
-                    android:layout_marginRight="30dp"
                     android:textSize="16sp"
                     tools:text="Fulano de Tal, Ciclano de Tal" />
 
@@ -163,7 +157,6 @@
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_marginEnd="30dp"
-                    android:layout_marginRight="30dp"
                     android:textSize="16sp"
                     tools:text="Beltrano de Tal" />
 
@@ -190,7 +183,6 @@
                     android:layout_width="0dp"
                     android:layout_height="0dp"
                     android:layout_marginEnd="30dp"
-                    android:layout_marginRight="30dp"
                     android:textSize="16sp"
                     tools:text="09:00" />
 
