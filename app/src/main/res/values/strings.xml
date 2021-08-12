@@ -4,7 +4,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="horario">Horário</string>
-    <string name="exame">Exame</string>
+    <string name="configuracoes">Configurações</string>
     <string name="status">Status</string>
     <string name="paciente">Paciente</string>
     <string name="iniciar_rota">Iniciar rota</string>
@@ -20,4 +20,6 @@
     <string name="pagamento">Pagamento</string>
     <string name="cliente">Cliente:</string>
     <string name="todo">TODO</string>
+    <string name="chegou_ao_destino">VOCÊ CHEGOU AO DESTINO</string>
+    <string name="exame">Exame</string>
 </resources>

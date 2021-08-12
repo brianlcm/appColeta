@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".finalizaColeta">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/finaliza_coleta_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/chegou_ao_destino"
+            android:textColor="#4858b8"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/detalhes_rota_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="#f4f5f9"
+            app:layout_constraintBottom_toTopOf="@+id/confirma_destino_botao_proximo_destino"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/finaliza_coleta_titulo">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/confirma_destino_endereco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/endereco"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/confirma_destino_endereco_resposta"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/confirma_destino_endereco"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/confirma_destino_endereco"
+                    app:layout_constraintTop_toTopOf="@+id/confirma_destino_endereco"
+                    tools:text="11/08/2021" />
+
+                <TextView
+                    android:id="@+id/confirma_destino_cliente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/cliente"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/confirma_destino_endereco"
+                    app:layout_constraintTop_toBottomOf="@+id/confirma_destino_endereco" />
+
+                <TextView
+                    android:id="@+id/confirma_destino_cliente_resposta"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/confirma_destino_cliente"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/confirma_destino_endereco_resposta"
+                    app:layout_constraintTop_toTopOf="@+id/confirma_destino_cliente"
+                    tools:text="Francisco Bernardino" />
+
+                <TextView
+                    android:id="@+id/confirma_destino_exame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/exame"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/confirma_destino_endereco"
+                    app:layout_constraintTop_toBottomOf="@+id/confirma_destino_cliente" />
+
+                <ListView
+                    android:id="@+id/confirma_destino_exame_resposta"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:text="11 desoxicordisol"
+                    app:layout_constraintStart_toStartOf="@+id/confirma_destino_cliente_resposta"
+                    app:layout_constraintTop_toTopOf="@id/confirma_destino_exame" />
+
+                <TextView
+                    android:id="@+id/confirma_destino_pagamento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/pagamento"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/confirma_destino_exame"
+                    app:layout_constraintTop_toBottomOf="@+id/confirma_destino_exame" />
+
+                <TextView
+                    android:id="@+id/confirma_destino_pagamento_resposta"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/confirma_destino_exame_resposta"
+                    app:layout_constraintTop_toTopOf="@+id/confirma_destino_pagamento"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:text="Unimed" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/confirma_destino_botao_proximo_destino"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Próximo destino"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/confirma_destino_botao_confirma_coleta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/confirma_destino_botao_confirma_coleta"
+            app:layout_constraintTop_toTopOf="@+id/confirma_destino_botao_confirma_coleta" />
+
+        <Button
+            android:id="@+id/confirma_destino_botao_relata_problema"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Registrar um problema"
+            android:textSize="12sp"
+            android:backgroundTint="#b14084"
+            app:layout_constraintBottom_toBottomOf="@+id/confirma_destino_botao_confirma_coleta"
+            app:layout_constraintEnd_toStartOf="@+id/confirma_destino_botao_confirma_coleta"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/confirma_destino_botao_confirma_coleta" />
+
+        <Button
+            android:id="@+id/confirma_destino_botao_confirma_coleta"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Coleta realizada"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/confirma_destino_botao_proximo_destino"
+            app:layout_constraintStart_toEndOf="@+id/confirma_destino_botao_relata_problema"
+            app:layout_constraintTop_toBottomOf="@+id/detalhes_rota_card_view"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

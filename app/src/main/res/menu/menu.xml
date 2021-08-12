@@ -4,20 +4,15 @@
     <!-- "Mark Favorite", should appear as action button if possible -->
 
     <item
-        android:id="@+id/nome_usuario"
-        app:showAsAction="always"
-        android:title="Fulano de Tal" />
-
-    <item
         android:id="@+id/action_settings"
-        app:showAsAction="always"
+        app:showAsAction="ifRoom"
         android:icon="@drawable/icon_config"
-        android:title="Configurações" />
+        android:title="@string/configuracoes" />
 
     <item
         android:id="@+id/action_out"
-        app:showAsAction="always"
+        app:showAsAction="ifRoom"
         android:icon="@drawable/icon_out"
-        android:title="Horário" />
+        android:title="@string/horario" />
 
 </menu>
